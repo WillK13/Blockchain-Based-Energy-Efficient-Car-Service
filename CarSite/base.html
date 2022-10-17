@@ -1,0 +1,26 @@
+<head>
+  <meta charset="utf-8">
+  <title>Test</title>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcBoCz_p7KEKghKBqwgJD4Gy7ZhpVwFbE&callback=initMap&v=weekly"></script>
+ <h3>Rental Cars Available</h3>
+    <h4>Enter your current or future location below to see available cars near you.</h4>
+</head>
+
+<body onload="initialize();">
+  <div id="control">
+    <strong>Cars:</strong>
+    <select id="start" onchange="calcRoute();">
+      <option value="40.723931, -73.998086">Ice</option>
+      <option value="40.718696, -74.000890">Canal</option>
+      <option value="40.719594, -74.006816">Ghost</option>
+      <option value="40.722469, -73.987354">Katzs</option>
+      <option value="40.718057, -73.993374">Grand</option>
+
+    </select>
+    
+  </div>
+
+  <div id="map-canvas"></div>
+</body>
+
+

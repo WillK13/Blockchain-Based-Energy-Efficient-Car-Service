@@ -1,0 +1,117 @@
+html,
+body,
+#map-canvas {
+  height: 500px;
+  margin: 0px;
+  padding: 0px;
+  width: 700px;
+
+}
+
+#panel {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  margin-left: -180px;
+  z-index: 5;
+  background-color: #fff;
+  padding: 5px;
+  border: 1px solid #999;
+}
+
+#directions-panel {
+  height: 100px;
+  float: right;
+  width: 390px;
+  overflow: auto;
+}
+
+#map-canvas {
+  margin-right: 400px;
+}
+
+#control {
+  background: #fff;
+  padding: 5px;
+  font-size: 14px;
+  font-family: Arial;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 2px rgba(33, 33, 33, 0.4);
+  display: none;
+}
+
+@media print {
+  #map-canvas {
+    height: 500px;
+    margin: 0;
+  }
+
+  #directions-panel {
+    float: none;
+    width: auto;
+  }
+}
+
+input[type=text] {
+  background-color: #fff;
+  border: 0;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+  margin: 10px;
+  padding: 0 0.5em;
+  font: 400 18px Roboto, Arial, sans-serif;
+  overflow: hidden;
+  line-height: 40px;
+  margin-right: 0;
+  min-width: 25%;
+  color: #AD61EC;
+}
+
+input[type=button] {
+  background-color: #fff;
+  color: #AD61EC;
+  border: 0;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+  margin: 10px;
+  padding: 0 0.5em;
+  font: 400 18px Roboto, Arial, sans-serif;
+  overflow: hidden;
+  height: 40px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+input[type=button]:hover {
+  background: rgb(235, 235, 235);
+}
+
+input[type=button].button-primary {
+  background-color: #AD61EC;
+  color: white;
+}
+
+input[type=button].button-primary:hover {
+  background-color: #1765cc;
+}
+
+
+#response-container {
+  background-color: #fff;
+  border: 0;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+  margin: 10px;
+  padding: 0 0.5em;
+  font: 400 18px Roboto, Arial, sans-serif;
+  overflow: hidden;
+  overflow: auto;
+  max-height: 50%;
+  max-width: 90%;
+  background-color: rgba(255, 255, 255, 0.95);
+  font-size: small;
+}
+
+
+
+
